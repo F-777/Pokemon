@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Noto+Sans+JP:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+.app {
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: #1c1c1c;
+    min-height: 100vh;
+  }
+  
+  .header {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .search-form {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  input {
+    padding: 10px;
+    font-size: 16px; 
+    border-radius: 4px;
+    border: 2px solid #ccc;
+    margin-right: 10px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .error {
+    color: red;
+    margin-top: 10px;
+  }
+  
+  .pokemon-card {
+    border: 2.25px solid gold;
+    background-color: maroon;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .pokemon-card img {
+    width: 180px;
+    height: 180px;
+  }
+  
+  /* Efek hover pada card */
+  .pokemon-card:hover {
+    transform: scale(1.05); /* Membuat card sedikit membesar */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Meningkatkan shadow untuk efek hover */
+  }
+  
+  .recommendations {
+    margin-top: 30px;
+  }
+  
+  .recommendations h2 {
+    margin-bottom: 20px;
+    color: #ffcc00;
+  }
+  
+  .pokemon-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .pokemon-card h2 {
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    font-family: 'Noto Sans', serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #fff;
+  }
